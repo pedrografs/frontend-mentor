@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    --Light_slate_blue: hsl(252, 100%, 67%);
+    --Light_royal_blue: hsl(241, 81%, 54%);
+
+    --Violet_blue: hsla(256, 72%, 46%, 1);
+    --Persian_blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);    
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 4px  4px 4px rgba(0, 0, 0, 0.153);
+    width: 520px;
+}
+
+.left {
+    background: linear-gradient(0deg, var(--Light_royal_blue), var(--Light_slate_blue));
+    width: 260px;
+    height: 340px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 4px  4px 4px rgba(0, 0, 0, 0.335);
+}
+
+.result {
+    padding: 30px;
+    text-align: center;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.circle {
+    text-align: center;
+    background-color: hsla(241, 81%, 54%, 0.678);
+    border-radius: 200px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: auto;
+    box-shadow: inset 1px 1px 12px ;
+}
+
+.inside {
+    position: relative;
+    top: 28.66px;
+}
+
+.right {
+    width: 260px;
+    height: 340px;
+    
+}
+
+.great {
+    padding-top: 20px;
+}
+
+.great h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.great p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.right h1 {
+    padding: 20px 0px 15px 15px;
+    font-size: 22px;
+}
+
+.reaction strong, .memory strong {
+    padding-left: 57px;
+}
+
+.verbal strong, .visual strong {
+    padding-left: 72px;
+}
+
+.reaction:before {
+    content: url(assets/images/icon-reaction.svg);
+}
+
+.memory:before {
+    content: url(assets/images/icon-memory.svg);
+}
+
+.verbal:before {
+    content: url(assets/images/icon-verbal.svg);
+}
+
+.visual:before {
+    content: url(assets/images/icon-visual.svg);
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.2);
+    width: 80%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.reaction #reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.reaction #bold {
+    text-transform: bolder;
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.2);
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.memory #memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.2);
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.verbal #verbal {
+   color: hsl(166, 100%, 37%); 
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.2);
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.visual #visual {
+    color: hsl(234, 85%, 45%);
+}
+
+a {
+    background: linear-gradient(0deg, var(--Light_royal_blue), var(--Light_slate_blue));
+    color: white;
+    text-decoration: none;
+    padding: 10px 78.5px;
+    position: relative;
+    top: 17.75px;
+    left: 19px;
+    border-radius: 30px;
+}
+
+a:hover {
+    background-color: rgb(9, 0, 0);
+}
+
