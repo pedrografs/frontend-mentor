@@ -17,12 +17,14 @@
     --fweight01: 500;
     --fweight02: 700;
     --fweight03: 900;
+    
 }
 
 * {
     padding: 0;
     margin: 0px;
     font-family: var(--font01);
+    
 }
 
 
@@ -58,12 +60,69 @@ main {
 
 .content > p {
     padding-bottom: 15px;
+    line-height: 1.6rem;
+    color: var(--Desaturated_blue);
 }
 
 .annual_plan {
     background-color: var(--Very_pale_blue);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    border-radius: 5px;
+    justify-items: center;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.annual_plan .price {
+    justify-self: flex-start;
+    color: var(--Desaturated_blue);
+}
+
+.strong {
+    font-weight: 900;
+    color: var(--Dark_blue);
+    padding-bottom: 3px;
+}
+
+.change > a {
+    font-weight: 700;
+    color: var(--Dark_blue);
+}
+
+.change > a:hover {
+    text-decoration: none;
+    color: var(--Desaturated_blue);
+}
+
+button{
+    width: 100%;
+    border: 0px;
+    background-color: var(--Bright_blue);
+    color: white;
+    padding: 15px 0;
+    margin: 30px 0 20px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 6px 6px 13px  rgba(0, 0, 0, 0.334);
+}
+
+button:hover {
+    background-color: var(--Desaturated_blue);
+    color: white;
+    cursor: pointer;
+}
+
+.cancel_order:hover {
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+}
+
+@media (min-width: 700px) {
+    main {
+        max-width: 450px;
+        min-width: 450px;
+    }
 }
