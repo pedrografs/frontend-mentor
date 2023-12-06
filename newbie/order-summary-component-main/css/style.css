@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+
+    --font01: 'Red Hat Display', sans-serif;
+
+    --fweight01: 500;
+    --fweight02: 700;
+    --fweight03: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0px;
+    font-family: var(--font01);
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale_blue);
+}
+
+main {
+    max-width: 375px;
+    min-width: 375px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content h1 {
+    padding-bottom: 15px;
+}
+
+.content > p {
+    padding-bottom: 15px;
+}
+
+.annual_plan {
+    background-color: var(--Very_pale_blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
