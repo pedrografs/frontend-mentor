@@ -16,22 +16,103 @@
 
 body {
     background-color: var(--darkblue01);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 375px;
 }
 
 .container {
     background-color: var(--darkblue02);
     padding: 20px;
-    width: 375px;
     font-family: "Outfit", sans-serif;
     color: var(--White);
+    border-radius: 20px;
+}
+
+.img {
+    background-color: var(--Cyan);
+    background-image: url('images/icon-view.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 335px;
+    height: 335px;
+    border-radius: 10px;
 }
 
 .img img{
     width: 100%;
+    border-radius: 9px;
+}
+
+.img img:hover {
+    opacity: 0;
+}
+
+.content h1 {
+    font-weight: 400;
+}
+
+.content h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.content p {
+    font-weight: 300;
+    color: var(--Soft_blue);
+}
+
+.value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+.etherium, .day {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    color: var(--Soft_blue);
+}
+
+.etherium {
+    color: var(--Cyan);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--darkblue03);
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.creator p {
+    padding-left: 20px;
+}
+
+.creator img {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.creator span {
+    color: var(--White);
+}
+
+.creator span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
