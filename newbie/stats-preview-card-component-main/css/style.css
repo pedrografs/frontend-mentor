@@ -40,19 +40,38 @@ main {
 }
 
 .card {
-    background-color: var(--accent);
-    opacity: 80%;
-    box-shadow: inset 0 0px 20px 5px rgba(255, 255, 255, 0.516);
+    background-image: url("../images/image-header-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    
+    height: 279px;
+    width: 375px;
 }
+
+.card::after {
+    background-color: #550081;
+    border-radius: 10px 10px 0 0;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    height: 279px;
+    width: 375px;
+  }
+  
+.overlay {
+    background-color: #9553D2;
+    border-radius: 10px 10px 0 0;
+    mix-blend-mode: difference;
+    opacity: .1;
+    position: absolute;
+    height: 279px;
+    width: 375px;
+  }
 
 .card > img {
     width: 100%;
     height: 100%;
-    background-color: var(--accent);
-    opacity: 30%;
 }
 
 .content {
